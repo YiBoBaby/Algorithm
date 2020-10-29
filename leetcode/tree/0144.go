@@ -2,12 +2,6 @@ package main
 
 import "container/list"
 
-type TreeNode struct {
-	Val   int
-	Left  *TreeNode
-	Right *TreeNode
-}
-
 func preorderTraversal(root *TreeNode) []int {
 	stack := list.New()
 	node := root
